@@ -71,6 +71,7 @@ alarms = {
     "alarm_useragent": {"enabled": False, "interval": 320},
     "alarm_dummy": {"enabled": False, "interval": 300},
     "alarm_manual": {"enabled": False, "interval": 300},
+    "alarm_backendalarm": {"enabled": False, "interval": 320},
 }
 if "alarms" in data:
     for a in data["alarms"]:
@@ -81,6 +82,7 @@ if "alarms" in data:
 enrich = {
     "enrich_csbeacon": {"enabled": True, "interval": 300},
     "enrich_stage1": {"enabled": True, "interval": 300},
+    'enrich_sliver': {"enabled": True, 'interval': 300},
     "enrich_greynoise": {
         "enabled": True,
         "interval": 310,
